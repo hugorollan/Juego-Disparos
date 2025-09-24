@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Disparos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        canvas {
+            border: 1px solid white;
+            background-color: #001;
+        }
+        
+        #gameInfo {
+            margin: 10px;
+        }
+        
+        #gameInfo ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        
+        #gameInfo li {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameInfo">
+        <ul>
+            <li id="scoreli">Score: 0</li>
+            <li id="livesli">Lives: 3</li>
+        </ul>
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <!-- Import all game classes -->
+    <script src="Entity.js"></script>
+    <script src="Character.js"></script>
+    <script src="Player.js"></script>
+    <script src="Opponent.js"></script>
+    <script src="Boss.js"></script>
+    <script src="Shot.js"></script>
+    <script src="Game.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
